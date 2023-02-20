@@ -1,0 +1,236 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 16px;
+}
+.main{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+.title{
+    font-size: 5rem;
+    text-transform: uppercase;
+    letter-spacing: 8px;
+    padding: 15px;
+    margin: 20px;
+    background-color: #000;
+    color: #fff;
+    width: 99%;
+    text-align: center;
+
+}
+.container{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+.sub-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    width: 400px;
+    margin: 20px;
+    border: 3px solid #000;
+}
+.winner-board{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+    text-align: center;
+}
+.winner-board h1{
+    text-transform: uppercase;
+}
+.match-result{
+    font-size: 30px;
+}
+.competitor{
+    font-size: 50px;
+    padding: 10px;
+    margin: 10px;
+}
+.image-card{
+    background-image: url(img/logo.webp);
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #fff;
+    background-position: center;
+    height: 300px;
+    width: 250px;
+    display: flex;
+    justify-content: center;
+    transition: .2s;
+    border: 3px solid #000;
+}
+.card-name{
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 800;
+    padding: 10px;
+    margin: 10px;
+}
+
+.option-container{
+    margin: 20px 0;
+    width: 100%;
+    text-align: center;
+}
+.option-btn{
+    
+    margin: 5px;
+    border: 3px solid #000;
+    cursor: pointer;
+}
+.option-btn:hover{
+    transform: translateY(-10%);  
+    transition: .2s;
+}
+.option-btn:disabled{
+    transform: scale(1);  
+    opacity: .4;
+}
+.btn-image{
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+.start-btn,.reset-btn{
+    padding: 20px 40px;
+    font-size: 40px;
+    width: 300px;
+    margin: 0 10px;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+.start-btn{
+    background-color: #03df03;
+}
+.start-btn:disabled,.reset-btn:disabled{
+    opacity: .4;
+}
+.reset-btn{
+    background-color: #fe7171;
+}
+.btn-container{
+    padding: 20px;
+    text-align: center;
+}
+@media screen and (max-width: 992px){
+    .main{
+        min-height: 100vh;
+    }
+    .title{
+        font-size: 20px;
+        margin: 10px;
+    }
+    .sub-container{
+        height: auto;
+        width: auto;
+        margin: 5px;
+        padding: 0 10px;
+    }
+    .winner-board{
+        width: auto;
+        padding: 10px;
+        margin: 10px;
+    }
+    .match-result{
+        font-size: 16px;
+    }
+    .competitor{
+        font-size: 30px;
+        padding: 5px;
+        margin: 5px;
+    }
+    .image-card{
+        height: 280px;
+        width: 220px;
+    }
+    .btn-image{
+        width: 150px;
+        height: 150px;
+    }
+    .start-btn,.reset-btn{
+        padding: 20px 30px;
+        font-size:30px;
+        width: 250px;
+    }
+    .start-btn:disabled{
+        opacity: .3;
+    }
+    .btn-container{
+        padding: 15px;
+    }
+}
+@media screen and (max-width: 680px){
+    .main{
+        height: auto;
+        display: block;
+    }
+    .title{
+        padding: 1px;
+        margin: 2px;
+
+    }
+    .container{
+        flex-direction: column-reverse;
+        width: 100%;
+    }
+    .sub-container{
+        margin: 3px;
+    }
+    .winner-board{
+        padding: 5px;
+        margin: 5px;
+        font-size: 10px;
+    }
+    .competitor{
+        font-size: 16px;
+        padding: 3px;
+        margin: 3px;
+    }
+    .image-card{
+        height: 120px;
+        width: 120px;
+    }
+    .card-name{
+        font-size: 16px;
+        padding: 5px;
+        margin: 3px;
+    }
+    .option-container{
+        margin: 5px 0;
+        
+    }
+    .option-btn{
+        margin: 5px;
+        border: 2px solid #000;
+    }
+    .btn-image{
+        width: 70px;
+        height: 70px;
+    }
+    .start-btn,.reset-btn{
+        padding: 15px 20px;
+        font-size:12px;
+        width: 100px;
+        margin: 0 5px;
+    }
+    .btn-container{
+    padding: 4px;
+    }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>jack and poy</title>
+    </head>
+    <body>
+        <div class="main">
+            <h1 class="title">jack and poy</h1>
+            <div class="container">
+                <div id="player-card" class="sub-container">
+                    <h1 class="competitor">Player</h1>
+                    <div class="image-card" id="image1"></div>
+                    <p class="card-name" id="player1">---</p>
+                </div>
+                <div class="winner-board">
+                    <h1>Result:</h1>
+                    <p class="match-result" id="matchResult">---</p>
+                </div>
+                <div id="computer-card" class="sub-container">
+                    <h1 class="competitor">Computer</h1>
+                    <div class="image-card" id="image2"></div>
+                    <p class="card-name" id="computer1">---</p>
+                </div>
+            </div>
+            <div id="option-container" class="option-container">
+                <button onclick="paperSelect()" class="option-btn"><img class="btn-image" src="img/paper.png"></button>
+                <button onclick="rockSelect()" class="option-btn"><img class="btn-image" src="img/rock.png"></button>
+                <button onclick="scissorSelect()" class="option-btn"><img class="btn-image" src="img/scissor.png"></button>
+            </div>
+            <div class="btn-container">
+            <button onclick="Start()" id="startButton" class="start-btn">Start game</button>
+            <button onclick="resetGame()" id="resetButton" class="reset-btn">Reset</button>
+            </div>
+        </div>
+        <script src="script.js"></script>
+</body>
+</html>
